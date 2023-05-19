@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background: #1a313a;
+}
+
+.side-bar {
+	position: absolute;
+	width: 60px;
+	height: 100vh;
+	background: #fff;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.side-bar:hover {
+	width: 300px;
+}
+
+.side-bar ul {
+	position: relative;
+	height: 100vh;
+}
+
+.side-bar ul li {
+	list-style: none;
+}
+
+.side-bar ul li:hover {
+	background: #f3f3f3;
+}
+
+.side-bar ul li a {
+	position: relative;
+	display: flex;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.side-bar ul li a .icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 60px;
+	height: 60px;
+	font-size: 1.5em;
+	color: #333;
+}
+
+.side-bar ul li a .text {
+	position: relative;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	font-size: 1em;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.side-bar ul li.logo {
+	margin-bottom: 50px;
+}
+
+.side-bar ul li.logo:hover {
+	background: #fff;
+}
+
+.side-bar ul li.logo .icon {
+	font-size: 2em;
+}
+
+.side-bar ul li.logo .text {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.side-bar ul .bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.side-bar ul .bottom .imgBx {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.side-bar ul .bottom .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
